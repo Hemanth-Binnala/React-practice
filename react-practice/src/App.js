@@ -149,29 +149,86 @@
 
 //////////////////////////Above is HOCS /////////////////////////////////////////////////
 
-import React, { Component } from 'react'
-import CounterClickertwo from './components/ReactRender/CounterClickertwo'
-import HoverCounterTwo from './components/ReactRender/HoverCounterTwo'
-import User from './components/ReactRender/user'
-import Counter from './components/ReactRender/Counter'
-import CounterClickertwoRender from './components/ReactRender/CounterClickerTwoRender'
+// import React, { Component } from 'react'
+// import CounterClickertwo from './components/ReactRender/CounterClickertwo'
+// import HoverCounterTwo from './components/ReactRender/HoverCounterTwo'
+// import User from './components/ReactRender/user'
+// import Counter from './components/ReactRender/Counter'
+// import CounterClickertwoRender from './components/ReactRender/CounterClickerTwoRender'
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <CounterClickertwo />
-        <HoverCounterTwo />
-        {/* <User name = 'sai' /> */}
-        {/* <User name ={() => 'sai'} /> */}
-         <User render ={(isloggedin) => isloggedin ? 'sai' : 'Guest'} />
-        <Counter render = {(count,clicked)=>(<CounterClickertwoRender count={count} clicked = {clicked} />)} />
-      </div>
-    )
-  }
-}
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <CounterClickertwo />
+//         <HoverCounterTwo />
+//         {/* <User name = 'sai' /> */}
+//         {/* <User name ={() => 'sai'} /> */}
+//          <User render ={(isloggedin) => isloggedin ? 'sai' : 'Guest'} />
+//         <Counter render = {(count,clicked)=>(<CounterClickertwoRender count={count} clicked = {clicked} />)} />
+//       </div>
+//     )
+//   }
+// }
 
-export default App
+// export default App
 
 ///////////////////////The above is for practising REACT-RENDER///////////////////////////////////////////
 
+// import React from 'react'
+// import CounterOne from './components/ReducerHook/CounterOne'
+// import CounterOnecomplex from './components/ReducerHook/CounterOnecomplex'
+// import CounterOneComplexPart2 from './components/ReducerHook/CounterOneComplexPart2'
+// import FetchDataWithUseState from './components/ReducerHook/FetchDataWithUseState'
+// import FetchDataWithUseReducer from './components/ReducerHook/FetchDataWithUseReducer'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CounterOne /> */}
+//       {/* <CounterOnecomplex /> */}
+//       {/* <CounterOneComplexPart2 /> */}
+//       {/* <FetchDataWithUseState /> */}
+//       <FetchDataWithUseReducer />
+//     </div>
+//   )
+// }
+
+// export default App
+
+/////////////////////////////The above is for USEREDUCER/////////////////////////////////
+import React from 'react'
+import SimpleInputBox from './components/Debouncing/SimpleInputBox'
+import SimpleInputBoxApi from './components/Debouncing/SimpleInputBoxApi'
+import ResizeEventOptimization from './components/Debouncing/ResizeEventOptimization'
+import AutoCompleteWithDebounce from './components/Debouncing/AutoCompleteWithDebounce'
+import ScrollEventLogger from './components/Throttling/ScrollEventLogger'
+import ButtonClickThrottle from './components/Throttling/ButtonClickThrottle'
+import MouseMoveTracker from './components/Throttling/MouseMoveTracker'
+import DebounceThrottle from './components/Throttling/DebounceThrottle'
+
+function App() {
+  return (
+    <div>
+      {/* <SimpleInputBox /> */}
+      {/* <SimpleInputBoxApi /> */}
+      {/* <ResizeEventOptimization /> */}
+      {/* <AutoCompleteWithDebounce /> */}
+
+      {/* ABOVE ARE DEBOUNCE */}
+
+      {/* <ScrollEventLogger /> */}
+      {/* <ButtonClickThrottle /> */}
+      {/* <MouseMoveTracker /> */}
+
+      {/* ABOVE ARE THROTTLE */}
+
+      <DebounceThrottle />
+
+      {/* ABOVE IS THE COMBINATION OF BOTH */}
+
+    </div>
+  )
+}
+
+export default App
